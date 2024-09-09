@@ -8,6 +8,7 @@
         width: 107px;
         margin-right: 15px;
         cursor: pointer;
+        transition: opacity 0.34s;
     }
 
     .subscribe-button:hover {
@@ -29,6 +30,16 @@
         width: 77px;
         margin-right: 15px;
         cursor: pointer;
+        transition: background-color 0.4s, color 0.4s;
+    }
+
+    .join-button:hover {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .join-button:active {
+        opacity: 0.8;
     }
     
     .tweet-button {
@@ -41,6 +52,16 @@
         width: 76px;
         margin-right: 15px;
         cursor: pointer;
+        transition: box-shadow 0.4s, opacity 0.43s;
+    }
+
+    .tweet-button:hover {
+        box-shadow: 2px 2px 5px black;
+    }
+
+    .tweet-button:active {
+        opacity: 0.75;
+        box-shadow: none;
     }
 
     .request-button {
