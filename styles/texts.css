@@ -1,0 +1,17 @@
+p {
+    font-family: Verdana;
+    margin: 0;
+    max-width: 300px;
+}
+
+.sarlavha {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 3px;
+}
+
+.izoh {
+    color: gray;
+    margin-bottom: 20px;
+}
+
