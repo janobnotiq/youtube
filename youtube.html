@@ -1,29 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>YouTube</title>
-    <link rel="icon" href="media/pictures/download.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="media/pictures/download.png" type="image/png" />
     <style>
-        .thumbnail {
-            width: 370px;
-        }
-        
-        .search-bar {
+      p {
+        font-family: Roboto, Arial;
+      }
+      img {
+        width: 300px;
+      }
+      .search-bar {
+        display: block;
+      }
+      .video-preview {
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+      }
+      .channel-picture {
+        width: 50px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .video-info {
+        display: inline-block;
+        width: 200px;
+        vertical-align: top;
+      }
+      .profile-picture {
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid black;
+      }
+      .thumbnail-row {
+        margin-bottom: 12px;
+      }
 
-        }
+      .video-title {
+        margin: 0;
+        font-weight: 500;
+      }
     </style>
-</head>
-<body>
-    <input class="search-bar" type="text" placeholder="Search">
-    <img class="thumbnail" src="media/pictures/thumbnail-1.webp" alt="Picture of Nouman Ali Khan">
-    <p>
-        The story of Ustadh Nouman Ali Khan
-    </p>
-    <p>
-        FreeQuranEducation
-    </p>
-    <p>
-        378K views ::before 7 years ago
-    </p>
-</body>
+  </head>
+  <body>
+    <input type="text" placeholder="Search..." class="search-bar" />
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img
+          class="thumbnail"
+          src="/thumbnails/thumbnail-1.webp"
+          alt="Picture of video"
+        />
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img
+            class="profile-picture"
+            src="channels/profile1.jpg"
+            alt="channel picture"
+          />
+        </div>
+        <div class="video-info">
+          <p class="video-title">The story of Ustadh Nouman Ali Khan</p>
+          <p class="video-author">FreeQuranEducation</p>
+          <p class="video-stats">379K views &#183; 7 years ago</p>
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <img
+        class="thumbnail"
+        src="/thumbnails/thumbnail2.png"
+        alt="Picture of video"
+      />
+      <p class="video-title">3-dars.Tenglamalar, qoldiqli bo'lish</p>
+      <p class="video-author">Matematika ustaxonasi</p>
+      <p class="video-stats">19 views &#183; 3 days ago</p>
+    </div>
+  </body>
 </html>
