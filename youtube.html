@@ -2,16 +2,31 @@
 <html lang="en">
   <head>
     <title>YouTube</title>
+
+    <!-- this is for fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- this is for fonts -->
+
+    <!-- For icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- For icons -->
+
+    <!-- this is icon of page -->
     <link rel="icon" href="media/pictures/download.png" type="image/png" />
+    <!-- this is icon of page -->
     <style>
       p {
         font-family: Roboto, Arial;
+        margin-top: 0;
+        margin-bottom: 0;
       }
       img {
         width: 300px;
@@ -25,16 +40,7 @@
         vertical-align: top;
         margin-right: 15px;
       }
-      .channel-picture {
-        width: 50px;
-        display: inline-block;
-        vertical-align: top;
-      }
-      .video-info {
-        display: inline-block;
-        width: 200px;
-        vertical-align: top;
-      }
+
       .profile-picture {
         width: 40px;
         border-radius: 50%;
@@ -47,6 +53,23 @@
       .video-title {
         margin: 0;
         font-weight: 500;
+        line-height: 14px;
+        margin-bottom: 12px;
+      }
+
+      .video-author,
+      .video-stats {
+        font-size: 13px;
+        color: rgb(96, 96, 96);
+      }
+
+      .video-author {
+        margin-bottom: 4px;
+      }
+
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
     </style>
   </head>
@@ -60,7 +83,7 @@
           alt="Picture of video"
         />
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img
             class="profile-picture"
@@ -70,20 +93,35 @@
         </div>
         <div class="video-info">
           <p class="video-title">The story of Ustadh Nouman Ali Khan</p>
-          <p class="video-author">FreeQuranEducation</p>
+          <p class="video-author">
+            FreeQuranEducation <i class="fa fa-check-circle"></i>
+          </p>
           <p class="video-stats">379K views &#183; 7 years ago</p>
         </div>
       </div>
     </div>
     <div class="video-preview">
-      <img
-        class="thumbnail"
-        src="/thumbnails/thumbnail2.png"
-        alt="Picture of video"
-      />
-      <p class="video-title">3-dars.Tenglamalar, qoldiqli bo'lish</p>
-      <p class="video-author">Matematika ustaxonasi</p>
-      <p class="video-stats">19 views &#183; 3 days ago</p>
+      <div class="thumbnail-row">
+        <img
+          class="thumbnail"
+          src="/thumbnails/thumbnail2.png"
+          alt="Picture of video"
+        />
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img
+            class="profile-picture"
+            src="channels/profile2.jpg"
+            alt="channel picture"
+          />
+        </div>
+        <div class="video-info">
+          <p class="video-title">3-dars.Tenglamalar, qoldiqli bo'lish</p>
+          <p class="video-author">Matematika ustaxonasi</p>
+          <p class="video-stats">19 views &#183; 3 days ago</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
