@@ -22,106 +22,416 @@
     <!-- this is icon of page -->
     <link rel="icon" href="media/pictures/download.png" type="image/png" />
     <!-- this is icon of page -->
-    <style>
-      p {
-        font-family: Roboto, Arial;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      img {
-        width: 300px;
-      }
-      .search-bar {
-        display: block;
-      }
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
-      }
 
-      .profile-picture {
-        width: 40px;
-        border-radius: 50%;
-        border: 1px solid black;
-      }
-      .thumbnail-row {
-        margin-bottom: 12px;
-      }
-
-      .video-title {
-        margin: 0;
-        font-weight: 500;
-        line-height: 14px;
-        margin-bottom: 12px;
-      }
-
-      .video-author,
-      .video-stats {
-        font-size: 13px;
-        color: rgb(96, 96, 96);
-      }
-
-      .video-author {
-        margin-bottom: 4px;
-      }
-
-      .video-info-grid {
-        display: grid;
-        grid-template-columns: 50px 1fr;
-      }
-    </style>
+    <link rel="stylesheet" href="/styles/video.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/sidebar.css" />
   </head>
   <body>
-    <input type="text" placeholder="Search..." class="search-bar" />
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img
-          class="thumbnail"
-          src="/thumbnails/thumbnail-1.webp"
-          alt="Picture of video"
-        />
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-picture">
+    <nav>
+      <div class="header">
+        <div class="left-section">
+          <img src="/icons/hamburger-menu.svg" alt="" class="hamburger-menu" />
+          <img src="/icons/youtube-logo.svg" alt="" class="youtube-logo" />
+        </div>
+        <div class="middle-section">
+          <input type="text" placeholder="Search" class="search-bar" />
+          <button class="search-button">
+            <img src="/icons/search.svg" alt="" class="search-icon" />
+          </button>
+          <button class="voice-search-button">
+            <img
+              src="/icons/voice-search-icon.svg"
+              alt=""
+              class="voice-search-icon"
+            />
+          </button>
+        </div>
+        <div class="right-section">
+          <img src="/icons/upload.svg" alt="" class="upload-icon" />
+          <img src="/icons/youtube-apps.svg" alt="" class="apps-icon" />
           <img
-            class="profile-picture"
-            src="channels/profile1.jpg"
-            alt="channel picture"
+            src="/icons/notifications.svg"
+            alt=""
+            class="notifications-icon"
           />
-        </div>
-        <div class="video-info">
-          <p class="video-title">The story of Ustadh Nouman Ali Khan</p>
-          <p class="video-author">
-            FreeQuranEducation <i class="fa fa-check-circle"></i>
-          </p>
-          <p class="video-stats">379K views &#183; 7 years ago</p>
+          <img src="/channels/profile3.jpg" alt="" class="my-channel" />
         </div>
       </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img
-          class="thumbnail"
-          src="/thumbnails/thumbnail2.png"
-          alt="Picture of video"
-        />
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-picture">
+      <div class="side-bar">
+        <div class="sidebar-link">
+          <img src="/icons/home.svg" alt="" class="home-icon" />
+          <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="/icons/explore.svg" alt="" class="explore-icon" />
+          <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
           <img
-            class="profile-picture"
-            src="channels/profile2.jpg"
-            alt="channel picture"
+            src="/icons/subscriptions.svg"
+            alt=""
+            class="subscriptions-icon"
           />
+          <div>Subscriptions</div>
         </div>
-        <div class="video-info">
-          <p class="video-title">3-dars.Tenglamalar, qoldiqli bo'lish</p>
-          <p class="video-author">Matematika ustaxonasi</p>
-          <p class="video-stats">19 views &#183; 3 days ago</p>
+        <div class="sidebar-link">
+          <img src="/icons/originals.svg" alt="" class="originals-icon" />
+          <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+          <img
+            src="/icons/youtube-music.svg"
+            alt=""
+            class="youtube-music-icon"
+          />
+          <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="/icons/library.svg" alt="" class="library-icon" />
+          <div>Library</div>
         </div>
       </div>
-    </div>
+    </nav>
+    <main>
+      <section class="big-grid">
+        <a
+          href="https://www.youtube.com/watch?v=KiTH032mj1o&t=185s"
+          target="_blank"
+        >
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/thumbnails/thumbnail6.jpg"
+                alt="Picture of video"
+              />
+              <div class="video-time">26:46</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img
+                  class="profile-picture"
+                  src="channels/profil5.jpg"
+                  alt="channel picture"
+                />
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  024 سورة النور كاملة | الشيخ يونس اسويلص | رواية ورش عن نافع
+                </p>
+                <p class="video-author">
+                  Younes Souilass يونس اسويلص <i class="fa fa-check-circle"></i>
+                </p>
+                <p class="video-stats">91K views &#183; 2 months ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=Y140oBJ8KBo" target="_blank">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/thumbnails/thumbnail-1.webp"
+                alt="Picture of video"
+              />
+              <div class="video-time">6:24</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img
+                  class="profile-picture"
+                  src="channels/profile1.jpg"
+                  alt="channel picture"
+                />
+              </div>
+              <div class="video-info">
+                <p class="video-title">The story of Ustadh Nouman Ali Khan</p>
+                <p class="video-author">
+                  FreeQuranEducation <i class="fa fa-check-circle"></i>
+                </p>
+                <p class="video-stats">379K views &#183; 7 years ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://www.youtube.com/watch?v=ECAlk281nXk&t=283s"
+          target="_blank"
+        >
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/thumbnails/thumbnail.jpg"
+                alt="Picture of video"
+              />
+              <div class="video-time">6:08</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img
+                  class="profile-picture"
+                  src="channels/channel.jpg"
+                  alt="channel picture"
+                />
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Can a muslim deliver haram food for a wage?
+                </p>
+                <p class="video-author">
+                  Belal Assaad <i class="fa fa-check-circle"></i>
+                </p>
+                <p class="video-stats">9.1K views &#183; 2 months ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="/thumbnails/thisis.png"
+              alt="Picture of video"
+            />
+            <div class="video-time">9:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channels/profil4.png"
+                alt="channel picture"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">1-loyiham | Blog project</p>
+              <p class="video-author">
+                Loyihalar <i class="fa fa-check-circle"></i>
+              </p>
+              <p class="video-stats">3 views &#183; 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="/thumbnails/thumbnail5.png"
+              alt="Picture of video"
+            />
+            <div class="video-time">6:53</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channels/profil4.png"
+                alt="channel picture"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">2-loyiham | TODO project</p>
+              <p class="video-author">
+                Loyihalar <i class="fa fa-check-circle"></i>
+              </p>
+              <p class="video-stats">3 views &#183; 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="/thumbnails/thumbnail3.png"
+              alt="Picture of video"
+            />
+            <div class="video-time">1:37</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channels/profile3.jpg"
+                alt="channel picture"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Balki...</p>
+              <p class="video-author">G'aribiy</p>
+              <p class="video-stats">30 views &#183; 3 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="/thumbnails/thumbnail6.jpg"
+              alt="Picture of video"
+            />
+            <div class="video-time">26:46</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channels/profil5.jpg"
+                alt="channel picture"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                024 سورة النور كاملة | الشيخ يونس اسويلص | رواية ورش عن نافع
+              </p>
+              <p class="video-author">
+                Younes Souilass يونس اسويلص <i class="fa fa-check-circle"></i>
+              </p>
+              <p class="video-stats">91K views &#183; 2 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="/thumbnails/thumbnail-1.webp"
+              alt="Picture of video"
+            />
+            <div class="video-time">6:24</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channels/profile1.jpg"
+                alt="channel picture"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">The story of Ustadh Nouman Ali Khan</p>
+              <p class="video-author">
+                FreeQuranEducation <i class="fa fa-check-circle"></i>
+              </p>
+              <p class="video-stats">379K views &#183; 7 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="/thumbnails/thumbnail.jpg"
+              alt="Picture of video"
+            />
+            <div class="video-time">6:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channels/channel.jpg"
+                alt="channel picture"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Can a muslim deliver haram food for a wage?
+              </p>
+              <p class="video-author">
+                Belal Assaad <i class="fa fa-check-circle"></i>
+              </p>
+              <p class="video-stats">9.1K views &#183; 2 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="/thumbnails/thumbnail6.jpg"
+              alt="Picture of video"
+            />
+            <div class="video-time">26:46</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channels/profil5.jpg"
+                alt="channel picture"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                024 سورة النور كاملة | الشيخ يونس اسويلص | رواية ورش عن نافع
+              </p>
+              <p class="video-author">
+                Younes Souilass يونس اسويلص <i class="fa fa-check-circle"></i>
+              </p>
+              <p class="video-stats">91K views &#183; 2 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="/thumbnails/thumbnail-1.webp"
+              alt="Picture of video"
+            />
+            <div class="video-time">6:24</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channels/profile1.jpg"
+                alt="channel picture"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">The story of Ustadh Nouman Ali Khan</p>
+              <p class="video-author">
+                FreeQuranEducation <i class="fa fa-check-circle"></i>
+              </p>
+              <p class="video-stats">379K views &#183; 7 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="/thumbnails/thumbnail.jpg"
+              alt="Picture of video"
+            />
+            <div class="video-time">6:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channels/channel.jpg"
+                alt="channel picture"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Can a muslim deliver haram food for a wage?
+              </p>
+              <p class="video-author">
+                Belal Assaad <i class="fa fa-check-circle"></i>
+              </p>
+              <p class="video-stats">9.1K views &#183; 2 months ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
