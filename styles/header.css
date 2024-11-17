@@ -66,7 +66,7 @@
 
 .search-bar {
     flex: 1;
-    height: 37px;
+    height: 36.5px;
     border: 1px solid rgb(189, 186, 186);
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.07);
